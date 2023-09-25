@@ -60,8 +60,7 @@ d3.json(url).then(function(data) {
     // Layout for Plotly bar chart
     const barLayout = {
       title: "Top 10 OTUs",
-      xaxis: { title: "Sample Values" },
-      yaxis: { title: "OTU ID" }
+      xaxis: { title: "Sample Values" }
     };
 
     // Prepare data for Plotly bubble chart
@@ -72,13 +71,13 @@ d3.json(url).then(function(data) {
       mode: "markers",
       marker: {
         size: sampleData.map(d => d.sample_value),
-        color: sampleData.map(d => d.otu_id)
+        color: sampleData.map(d => d.otu_id),
+        colorscale: "Earth"
       }
     };
 
     // Layout for Plotly bubble chart
     const bubbleLayout = {
-      title: "OTU ID",
       xaxis: { title: "OTU ID" },
       yaxis: { title: "Sample Values" }
     };
