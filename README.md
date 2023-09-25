@@ -4,4 +4,4 @@ Documentation on D3 and Plotly was hugely necessary for this site build as well 
 
 It took some getting used to IOT understand the injection relationship of javascript into HTML5.
 
-Access the github pages at 
+Access the github pages at https://swagmastermatt.github.io/belly-button-challenge/
